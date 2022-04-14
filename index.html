@@ -5,34 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>cinema Booking</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Online Cinema Booking System</title>
+</head>
 
 <body>
 
   <!--navbar section-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <a class="navbar-brand" href="#">Movie store</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#">Movie store</a style="margin-left:3em !important">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:20em">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">about <span class="sr-only"></span></a>
+          <a class="nav-link" href="movielist.html">Movie list <span class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">movie list <span class="sr-only"></span></a>
+          <a class="nav-link" href="newrelease.html">New release <span class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">new release <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">contact <span class="sr-only"></span></a>
+          <a class="nav-link" href="contact.html">Contact <span class="sr-only"></span></a>
         </li>
 
         <div class="icons">
@@ -53,94 +51,154 @@
           <h1>CINEMA BOOKING</h1>
           <p class="lead my-4">we service your best and with excellence!!!</p>
         </div>
-        <div class="card" style="width: 20rem;">
-          <div class="img">
-            <img class="img-fluid" src="assets/img/c10.jpg" alt="movie poster">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        
+        <div class="container">
+          <div id="myCarousel" class="carousel slide" data-interval="false">
+        
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="assets/img/c6.jpg" alt="image">
+              </div>
+            <div class="item">
+                <img src="assets/img/c22.jpg" alt="image">
+              </div>
+            <div class="item">
+                <img src="assets/img/c18.jpg" alt="image">
+              </div>
+            <div class="item">
+                <img src="assets/img/c19.jpg" alt="image">
+              </div>
+            <div class="item">
+                <img src="assets/img/c15.png" alt="image">
+              </div>
+            
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <div id="thumbCarousel">
+              <div data-target="#myCarousel" data-slide-to="0" class="thumb active"><img src="assets/img/c6.jpg" alt="XZ" style="width: 120px; height: 130px"></div>
+              <div data-target="#myCarousel" data-slide-to="1" class="thumb"><img src="assets/img/c22.jpg" alt="XZ" style="width: 120px; height: 130px"></div>
+              <div data-target="#myCarousel" data-slide-to="2" class="thumb"><img src="assets/img/c18.jpg" alt="XZ" style="width: 120px; height: 130px"></div>
+              <div data-target="#myCarousel" data-slide-to="3" class="thumb"><img src="assets/img/c19.jpg" alt="XZ" style="width: 120px; height: 130px"></div>
+              <div data-target="#myCarousel" data-slide-to="4" class="thumb"><img src="assets/img/c15.png" alt="XZ" style="width: 120px; height: 130px"></div>           
+            </div>
+          
           </div>
         </div>
 
-
-
       </div>
     </div>
+
+
+
+
   </section>
+  <hr style="color: yellow;">
   <div class="container shop">
     <div class="style d-flex">
       <div class="card" style="width: 20rem;">
         <div class="card-body">
           <h2 class="card-title">ANIMATION</h2>
           <img src="./assets/img/c30.jpg" class="gallery-item" width="100%" alt="gallery">
-          <a href="#" class="btn btn-dark">BOOK Ksh 1,000<i class="bi bi-arrow-right-short"></i></a>
+          <div class="d-grid gap-1 col-lg-3 mx-auto">
+            <p style="color: rgb(148, 189, 45);">AMOUNT: KSH 1,100</p>
+            <p style="color: rgb(18, 19, 19);">TIME  :14hrs</p>
+            <button class="btn btn-primary" type="button">Book with us </button>
+
+          </div></p>
 
         </div>
       </div>
       <div class="card" style="width: 20rem;">
         <div class="card-body">
-          <h2 class="card-title">DRAMA</h2>
-          <img src="./assets/img/c17.jpg" class="gallery-item" width="100%" alt="gallery">
-          <a href="#" class="btn btn-dark">BOOK 1,200<i class="bi bi-arrow-right-short"></i></a>
+          <h2 class="card-title">COMMEDY</h2>
+         <p> <img src="./assets/img/c17.jpg" class="gallery-item" width="100%" alt="gallery">
+          <div class="d-grid gap-1 col-lg-3 mx-auto">
+            <p style="color: yellowgreen;">AMOUNT: KSH 2,000</p>
+            <p style="color: rgb(18, 19, 19);">TIME  :20hrs</p>
+            <button class="btn btn-primary" type="button">Book with us </button>
+          </div></p>
 
         </div>
       </div>
       <div class="card" style="width: 20rem;">
         <div class="card-body">
           <h2 class="card-title">ACTION</h2>
-          <img src="./assets/img/c7.jpg" class="gallery-item" width="100%" alt="gallery">
-          <a href="#" class="btn btn-dark">BOOK 1,500<i class="bi bi-arrow-right-short"></i></a>
-
-
+        <p>  <img src="./assets/img/c7.jpg" class="gallery-item" width="100%" alt="gallery">
+          <div class="d-grid gap-1 col-lg-3 mx-auto">
+            <p style="color: yellowgreen;">AMOUNT: KSH 1,800</p>
+            <p style="color: rgb(18, 19, 19);">TIME  :11hrs</p>
+            <button class="btn btn-primary" type="button">Book with us </button>
+          </div></p>
+          </div>
+          </div>
+          
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h2 class="card-title">DOCUMENTARY</h2>
+              <img src="./assets/img/c4.jpg" class="gallery-item" width="100%" alt="gallery">
+              <div class="d-grid gap-1 col-lg-3 mx-auto">
+                <p style="color: yellowgreen;">AMOUNT: KSH 1,500</p>
+                <p style="color: rgb(18, 19, 19);">TIME  :15hrs</p>
+                <button class="btn btn-primary" type="button">Book with us </button>
+    
+              </div></p>
+    
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h2 class="card-title">HORROR</h2>
+             <p> <img src="./assets/img/c12.jpg" class="gallery-item" width="100%" alt="gallery">
+              <div class="d-grid gap-1 col-lg-3 mx-auto">
+                <p style="color: yellowgreen;">AMOUNT: KSH 1,200</p>
+                <p style="color: rgb(18, 19, 19);">TIME  :21hrs</p>
+                <button class="btn btn-primary" type="button">Book with us </button>
+              </div></p>
+    
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h2 class="card-title">SUPERPOWER</h2>
+            <p>  <img src="./assets/img/c28.jpg" class="gallery-item" width="100%" alt="gallery">
+              <div class="d-grid gap-1 col-lg-3 mx-auto">
+                <p style="color: yellowgreen;">AMOUNT: KSH 1,000</p>
+                <p style="color: rgb(18, 19, 19);">TIME  :14hrs</p>
+                <button class="btn btn-primary" type="button">Book with us </button>
+              </div></p>
+              </div>
+              </div>
+              </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-  <br>
-  <p><a href="index.html" class="btn-primary btn-lg align-items-center" style="text-decoration: none">book with us</a>
-    </br></p>
-
-  </div>
+</div>
   <!--end homepage-->
-
-
-  <!--footer-->
-  <div class="footer">
-    <footer class="bg-dark text-white pt-5 pb-4">
-      <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-              <div class="info-box">
-                <i class="bx bx-share-alt"></i>
-                <h6>follow us here</h6>
-                <div class="social-links">
-                  <a href="https://twitter.com/Josephi33531562" class="twitter"><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/josie.bobo.5" class="facebook"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/queen_yrimoh/" class="instagram"><i
-                      class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/wairimu-josephine-839bb922a/" class="linkedin"><i
-                      class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!--end footer-->
-
 
 
 
   <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <section id="about" class="about" style="background-color: darkgray;!important">
 
     <!-- ======= About Me ======= -->
     <div class="about-me container">
@@ -181,11 +239,61 @@
     <!-- End About Me -->
 
 
+    <!--footer-->
+    <div class="footer">
+      <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="containevr text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <h6>follow us here</h6>
+            <div class="socigggal-links">
+              
+              
+              
+              
+              
+              <div class="col-md-12">
+
+                <div class="col-md-3">
+                  <a href="https://www.facebook.com/josie.bobo.5" target="_blank" class=""><img src="assets/img/fb.jpg" class="img-fluid social-links" alt="facebook"></a>
+
+                </div>  
+                 <div class="col-md-3">
+                  <a href="https://www.instagram.com/queen_yrimoh/" target="blank" class=""><img src="assets/img/inst2.jpg" class="img-fluid social-links" alt="instagram"></a>
+
+                </div>   
+                <div class="col-md-3">
+                  <a href="https://twitter.com/Josephi33531562" target="_blank" class=""><img src="assets/img/tw.png" class="img-fluid social-links" alt="twitter"></i></a>
+
+                </div>
+                <div class="col-md-3">
+                  <a href="https://www.linkedin.com/in/wairimu-josephine-839bb922a" target="blank" class=""><img src="assets/img/in2.png" class="img-fluid social-links" alt="linkein"></a>
+
+                </div>
+
+            </div>
+            <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div class="col-md-8 mt-4 mt-md-0 d-flex align-items-stretch">
+                <div class="ignfo-box">
+                  <i class="bx bx-share-alt"></i>
+                  <h6>thank you for choosing us.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--end footer-->
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+<script type="javascript"href="./assets/js/main.js"></script>
+
 
 
 </body>
