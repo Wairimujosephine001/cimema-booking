@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+    <title>contact</title>
+</head>
+
+<body>
+     <!--navbar section-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+  <a class="navbar-brand" href="#" style="margin-left:3em; color: aliceblue;">Movie store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:20em">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+       
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="newrelease.html"style="margin-left:3em; color: aliceblue;">New release <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Booking.html"style="margin-left:3em; color: aliceblue;">Booking <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html"style="margin-left:3em; color: aliceblue;">Contact <span class="sr-only"></span></a>
+        </li>
+  
+        <div class="icons">
+          <i class="bi bi-search"></i>
+          <i class="bi bi-cart"></i>
+        </div>
+    </div>
+  </nav>
+  <!--end navbar-->
+  <div id="movieInfo">
+
+  </div>
+  <div class="input-group mb-4">
+
+    <label class="input-group-text" for="inputGroupSelect01">Movies available</label>
+    <select id="avMovie" class="form-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="Action">Action</option>
+      <option value="Horror">Horror</option>
+      <option value="Documentary">Documentary</option>
+      <option value="Biblical">Biblical</option>
+      <option value="Animation">Animation</option>
+      <option value="Commedy">Commedy</option>
+      <option value="Superpower">Superpower</option>
+
+      
+    </select>
+  </div>
+
+  <div id="timeInfo">
+
+  </div>
+  <div class="input-group mb-4">
+
+    <label class="input-group-text" for="inputGroupSelect02">Time</label>
+    <select id="timmovie" class="form-select" id="inputGroupSelect02">
+      <option selected>Choose...</option>
+      <option value="7Hrs">7Hrs</option>
+      <option value="10Hrs">10Hrs</option>
+      <option value="12Hrs">12Hrs</option>
+      <option value="13Hrs">13Hrs</option>
+      <option value="16Hrs">16Hrs</option>
+      <option value="18Hrs">18Hrs</option>
+      <option value="17Hrs">17Hrs</option>
+
+      
+    </select>
+  </div>
+  
+  <div id="TicketInfo">
+
+  </div>
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect03">Tickets</label>
+    <select id="ticmovie" class="form-select" id="inputGroupSelect03">
+      <option selected>Choose...</option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+
+    </select>
+ 
+  </div>
+ 
+  <div id="paymentInfo">
+
+  </div>
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect04">Payment</label>
+    <select id="paymovie" class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+      <option selected>Choose...</option>
+      <option value="M-pesa">M-pesa</option>
+      <option value="Bank">Bank</option>
+      <option value="Cash">Cash</option>
+
+        </div>
+      </div>
+    </select>
+  </div>
+  
+
+  <form class="form-horizontal" role="form" action=""  method="post">
+<div class="form-group" id="formGroupSubject">
+<label for="inputSubjectx" class="col-sm-2 control-label">Comment section</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="inputSubjectx" name="inputSubjectx" >
+</div>
+</div>
+<div class="form-group" >
+<div class="col-sm-offset-9 col-sm-2" col-sm-offset-1>
+<a  onclick="submitForm()" class="btn btn-warning">BOOK</a>
+</div>
+</div>
+</form>
+
+
+
+
+
+
+<!-- Contact section -->
+<p class="contact-top" id="contact">This page was made  <span class="glyphicon glyphicon-heart"></span> by Josephine</p>
+
+
+
+
+
+
+
+
+
+
+<!-- Background Animation -->
+<div id="background-wrap">
+<div class="bubble x1"></div>
+<div class="bubble x2"></div>
+<div class="bubble x3"></div>
+<div class="bubble x4"></div>
+<div class="bubble x5"></div>
+<div class="bubble x6"></div>
+<div class="bubble x7"></div>
+<div class="bubble x8"></div>
+<div class="bubble x9"></div>
+<div class="bubble x10"></div>
+<div class="bubble x11"></div>
+<div class="bubble x12"></div>
+<div class="bubble x13"></div>
+<div class="bubble x14"></div>
+<div class="bubble x15"></div>
+</div>
+
+
+
+<script type="text/javascript" src="./assets/js/main.js"></script>
+
+
+
+</body>
+</html>

@@ -1,37 +1,20 @@
-$(document).ready(function(){
-	 
-    //carousel-control
-    
-    $("#myCarousel").mouseover(function(){
-        $("#myCarousel .carousel-control").show();
-    });
+function submitForm(){
+    let avMovie = document.getElementById('avMovie').value
+    //document.getElementById('movieInfo').innerHTML = '<div class="alert alert-danger" role="alert"> Your selected available movie is: '+avMovie+'</div>'
+   
+    let timMovie = document.getElementById('timmovie').value
 
-    $("#myCarousel").mouseleave(function(){
-        $("#myCarousel .carousel-control").hide();
-    });
+    //document.getElementById('timeInfo').innerHTML = '<div class="alert alert-danger" role="alert"> Your selected available time is: '+timMovie+'</div>'
+
+    let ticMovie = document.getElementById('ticmovie').value
+
+   // document.getElementById('ticketInfo').innerHTML = '<div class="alert alert-danger" role="alert"> Your selected available time is: '+ticMovie+'</div>'
+
+    let payMovie = document.getElementById('paymovie').value
+
+    document.getElementById('movieInfo').innerHTML = '<div class="alert alert-danger" role="alert""> Your selected movie is: <span class="text-success">'+avMovie+'</span> you selected time : <span class="text-info">'+timMovie+'</span> And ticket info is <span class="text-primary">'+ticMovie+' And payment info <span class="text-primary">'+payMovie+'</span></span> </div>'
     
-    //active thumbnail
-    
-    $("#thumbCarousel .thumb").on("click", function(){
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    
-    });
-    
-    //carousel slides
-    
-    $('#myCarousel').on('slid.bs.carousel', function(){
-       var index = $('.carousel-inner .item.active').index();
-       //console.log(index);
-       var thumbnailActive = $('#thumbCarousel .thumb[data-slide-to="'+index+'"]');
-       thumbnailActive.addClass('active');
-       $(thumbnailActive).siblings().removeClass("active");
-       //console.log($(thumbnailActive).siblings()); 
-    });
- });
+} 
 
 
-
- window.onload = function() {
-    document.getElementById("audio-main").play();
-  }
+      
